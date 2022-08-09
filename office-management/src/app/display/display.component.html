@@ -1,0 +1,22 @@
+<div class="container-fluid center">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Department</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of userData">
+        <th scope="row">{{data._id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.department}}</td>
+        <td>{{data.location}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+</div>
