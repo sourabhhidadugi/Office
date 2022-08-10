@@ -1,0 +1,17 @@
+<div class="container-fluid center">
+    <table class="table table">
+        <thead>
+          <tr>
+            <th scope="col">ID Number</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of userData">
+            <th scope="row">{{data._id}}</th>
+            <td>{{data.name}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

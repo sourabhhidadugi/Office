@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from './users'
+import { data } from '../users'
 
 
 interface UserData {  
@@ -7,14 +7,15 @@ interface UserData {
   name: String;  
   department: String;  
   location: String;  
+  dept_id: Number
 }  
 
 @Component({
-  selector: 'app-display',
-  templateUrl: './display.component.html',
-  styleUrls: ['./display.component.css']
+  selector: 'app-display-dept',
+  templateUrl: './display-dept.component.html',
+  styleUrls: ['./display-dept.component.css']
 })
-export class DisplayComponent implements OnInit {
+export class DisplayDeptComponent implements OnInit {
   userData: Array<UserData> = data;
   constructor() { }
 

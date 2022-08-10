@@ -5,6 +5,8 @@
     background-color:  rgb(255, 236, 252);
     border-radius: 10px;
     padding: 20px;
+    border: 2px solid rgb(255, 60, 122);
+
 }
 .btn-success{
     margin-right: 20px;
