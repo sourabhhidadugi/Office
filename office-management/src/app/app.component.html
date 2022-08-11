@@ -1,26 +1,31 @@
-<mat-tab-group mat-align-tabs="center" backgroundColor="primary">
+<mat-tab-group mat-align-tabs="center" backgroundColor="accent">
   <mat-tab label="Name">
-    <mat-tab-group mat-align-tabs="center">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile><app-input-name></app-input-name></mat-grid-tile>
+      <mat-grid-tile rowspan="2"><app-display-name></app-display-name></mat-grid-tile>
+      <mat-grid-tile><app-edit-name></app-edit-name></mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab>
+    <!-- <mat-tab-group mat-align-tabs="center">
     <mat-tab label="Input"><app-input-name></app-input-name></mat-tab>
     <mat-tab label="Display"><app-display-name></app-display-name></mat-tab>
     <mat-tab label="Edit"><app-edit-name></app-edit-name></mat-tab>
-  </mat-tab-group>
-  </mat-tab>
+  </mat-tab-group> -->
 
   <mat-tab label="Department">
-    <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Input"><app-input-dept></app-input-dept></mat-tab>
-    <mat-tab label="Display"><app-display-dept></app-display-dept></mat-tab>
-    <mat-tab label="Edit"><app-edit-dept></app-edit-dept></mat-tab>
-  </mat-tab-group>
-  </mat-tab>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile><app-input-dept></app-input-dept></mat-grid-tile>
+      <mat-grid-tile rowspan="2"><app-display-dept></app-display-dept></mat-grid-tile>
+      <mat-grid-tile><app-edit-dept></app-edit-dept></mat-grid-tile>
+    </mat-grid-list>
+    </mat-tab>
 
-  <mat-tab label="Location">
-    <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Input"><app-input-loc></app-input-loc></mat-tab>
-    <mat-tab label="Display"><app-display-loc></app-display-loc></mat-tab>
-    <mat-tab label="Edit"><app-edit-loc></app-edit-loc></mat-tab>
-  </mat-tab-group>
-  </mat-tab>
+    <mat-tab label="Location">
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile><app-input-loc></app-input-loc></mat-grid-tile>
+        <mat-grid-tile rowspan="2"><app-display-loc></app-display-loc></mat-grid-tile>
+        <mat-grid-tile><app-edit-loc></app-edit-loc></mat-grid-tile>
+      </mat-grid-list>
+    </mat-tab>
 
 </mat-tab-group>

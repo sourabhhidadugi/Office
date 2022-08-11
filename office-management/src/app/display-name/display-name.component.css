@@ -1,11 +1,11 @@
-.center{
+.box{
     width: 500px;
     margin-top: 20px;
     height: max-content;
     padding: 10px 5px 5px 5px;
     border-radius: 10px;
-    background-color:  rgb(255, 236, 252);
-    border: 2px solid rgb(255, 60, 122);
+    /* background-color:  rgb(255, 236, 252); */
+    /* border: 2px solid rgb(255, 60, 122); */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
 }
 th{

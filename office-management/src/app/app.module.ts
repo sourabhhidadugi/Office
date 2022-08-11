@@ -14,6 +14,7 @@ import { EditDeptComponent } from './edit-dept/edit-dept.component';
 import { DisplayLocComponent } from './display-loc/display-loc.component';
 import { InputLocComponent } from './input-loc/input-loc.component';
 import { EditLocComponent } from './edit-loc/edit-loc.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { EditLocComponent } from './edit-loc/edit-loc.component';
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MatTabsModule,
-    FormsModule, MatSelectModule, ReactiveFormsModule
+    FormsModule, MatSelectModule, ReactiveFormsModule, MatGridListModule
     
 
   ],
