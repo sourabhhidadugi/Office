@@ -1,46 +1,19 @@
+<div class="container-fluid">
+    <img src="https://img.icons8.com/color/344/administrator-male-skin-type-7.png" alt="Receptionist" width="50%" height="50%">
+</div>
 <div class="container-fluid input-box">
-    <form #userForm="ngForm">
+    <form [formGroup]="checkForm" (ngSubmit)="onSubmit()" style="width: fit-content;">
         <div class="form-group">
-            <label for="enter_id"><b>Email Your ID</b></label>
-            <input type="number" required class="form-control" name="_id" aria-describedby="input-ID" placeholder="Enter Your ID" ngModel>
-            <small id="name-help" class="form-text text-muted">Starting from 1</small>
+            <label for="enter_id"><b>Enter First Name</b></label>
+            <input type="text" aria-describedby="input-ID" placeholder="Enter Your ID" id="first" formControlName="first" class="form-control" placeholder="Enter Your First Name">
         </div>
         <div class="form-group">
-            <label for="enter-name"><b>Email Your Name</b></label>
-            <input type="text" required class="form-control" name="name" placeholder="Enter Your Name" ngModel>
-            <small id="name-help" class="form-text text-muted">Ex. John Smith.</small>
+            <label for="enter-name"><b>Enter Last Name</b></label>
+            <input type="text" type="text" id="last" formControlName="last" class="form-control" placeholder="Enter Your Last Name" >
         </div>
-        <!-- <hr>
-        
-            
-        </div>
-        <hr>
-        <label for="selectdepartment"><b>Select Your Department:</b></label><br>
-        <small id="dept-help" class="form-text text-muted">Select the department you wish to work in.</small><br>
-        <div class="form-check form-check-inline" name="deptName">
-        <input class="form-check-input" name="department" value="human resource" ngModel type="radio">
-        <label class="form-check-label" for="inlineRadio1">Human Resource</label>
-        </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" name="department" value="information technology" type="radio" ngModel>
-        <label class="form-check-label" for="inlineRadio1">Information Technology</label>
-        </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" name="department" value="marketing" type="radio" ngModel>
-        <label class="form-check-label" for="inlineRadio1">Marketing</label>
-        </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" name="department" value="sales" type="radio" ngModel>
-        <label class="form-check-label" for="inlineRadio1">Sales</label>
-        </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" name="department" value="quality assurance" type="radio" ngModel>
-        <label class="form-check-label" for="inlineRadio1">Quality Assurance</label>
-        </div>
-        <br><br> -->
-        <button type="submit" class="btn btn-success">Submit</button>
+        <br>
+        <button class="button" type="submit" class="btn btn-success" [disabled]="checkForm.invalid">Submit</button>
         <button type="reset" class="btn btn-danger">Reset</button>
-
     </form>
 </div>
- 
+    

@@ -1,10 +1,21 @@
-.box{
+.input-box{
     width: 500px;
-    margin-top: 20px;
-    height: max-content;
-    padding: 10px 5px 5px 5px;
+    margin-top: 30px;
+    height: fit-content;
+    /* background-color:  rgb(255, 236, 252); */
     border-radius: 10px;
-    /* background-color:  rgb(255, 236, 252);
-    border: 2px solid rgb(255, 60, 122); */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 10px 5px 5px 5px;
+    /* border: 2px solid rgb(255, 60, 122); */
+
+}
+.btn-success{
+    margin-right: 20px;
+}
+b{
+    color: rgb(2, 2, 52);
+    font-weight: 450;
+}
+img{
+    margin-top: 30px;
 }

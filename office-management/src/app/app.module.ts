@@ -7,14 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import { DisplayNameComponent } from './display-name/display-name.component';
 import { InputNameComponent } from './input-name/input-name.component';
-import { EditNameComponent } from './edit-name/edit-name.component';
-import { DisplayDeptComponent } from './display-dept/display-dept.component';
-import { InputDeptComponent } from './input-dept/input-dept.component';
-import { EditDeptComponent } from './edit-dept/edit-dept.component';
-import { DisplayLocComponent } from './display-loc/display-loc.component';
-import { InputLocComponent } from './input-loc/input-loc.component';
-import { EditLocComponent } from './edit-loc/edit-loc.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+import { DisplayLocComponent } from './display-loc/display-loc.component';
+import { DisplayDeptComponent } from './display-dept/display-dept.component';
+import { InputLocComponent } from './input-loc/input-loc.component';
+import { InputDeptComponent } from './input-dept/input-dept.component';
 
 
 @NgModule({
@@ -22,16 +20,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppComponent,
     DisplayNameComponent,
     InputNameComponent,
-    EditNameComponent,
-    DisplayDeptComponent,
-    InputDeptComponent,
-    EditDeptComponent,
     DisplayLocComponent,
+    DisplayDeptComponent,
     InputLocComponent,
-    EditLocComponent
+    InputDeptComponent,
+    
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MatTabsModule,
+    BrowserModule, BrowserAnimationsModule, MatTabsModule, MatIconModule,
     FormsModule, MatSelectModule, ReactiveFormsModule, MatGridListModule
     
 

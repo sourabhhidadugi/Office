@@ -1,16 +1,41 @@
-<div class="container-fluid center">
-    <table class="table table">
-        <thead>
+<div class="container-fluid box">
+    <form [formGroup]="checkForm" (ngSubmit)="onSubmit()" style="width: fit-content;">
+        <div class="form-group">
+            <label for="enter_id">Edit First Name</label>
+            <input type="text" aria-describedby="input-first-name" placeholder="Enter Department" id="dept" formControlName="dept" class="form-control" autocomplete="off" placeholder="Department Name">
+        </div>
+        <br>
+        <button class="button" type="submit" class="btn btn-primary" [disabled]="checkForm.invalid">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+</div>
+<hr>
+
+<div>
+  <table class="table" border="grey">
+      <thead>
           <tr>
-            <th scope="col">Department ID</th>
-            <th scope="col">Name</th>
+              <th style="width: 60px;">Sr. No.</th>
+              <th style="width: 150px;">Department Name</th>
+              <th style="width: 50px;">Edit</th>
+              <th style="width: 50px;">Delete</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of userData">
-            <th scope="row">{{data.dept_id}}</th>
-            <td>{{data.department}}</td>
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of list; index as i">
+              <td>
+                  {{i+1}}
+              </td>
+              <td>
+                  {{user.dept}}
+              </td>
+              <td>
+                  <button (click)="edit(i)"><mat-icon color="warn">edit</mat-icon></button>
+              </td>
+              <td>
+                  <button (click)="delete(i)"><mat-icon color="warn">delete</mat-icon></button>
+              </td>
           </tr>
-        </tbody>
-      </table>
+      </tbody>
+  </table>
 </div>

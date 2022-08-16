@@ -1,1 +1,15 @@
-<p>input-dept works!</p>
+<div class="container-fluid">
+    <img src="https://img.icons8.com/cute-clipart/344/office.png" alt="Receptionist" width="50%" height="50%">
+</div>
+<div class="container-fluid input-box">
+    <form [formGroup]="checkForm" (ngSubmit)="onSubmit()" style="width: fit-content;">
+        <div class="form-group">
+            <label for="enter_id"><b>Enter Department Name</b></label>
+            <input type="text" aria-describedby="input-ID" placeholder="Enter Your ID" id="first" formControlName="dept" class="form-control" placeholder="Enter Your First Name">
+        </div>
+        <br>
+        <button class="button" type="submit" class="btn btn-success" [disabled]="checkForm.invalid">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+</div>
+    

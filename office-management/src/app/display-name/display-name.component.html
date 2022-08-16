@@ -1,17 +1,49 @@
 <div class="container-fluid box">
-    <table class="table table">
-        <thead>
+    <form [formGroup]="checkForm" (ngSubmit)="onSubmit()" style="width: fit-content;">
+        <div class="form-group">
+            <label for="enter_id">Edit First Name</label>
+            <input type="text" aria-describedby="input-first-name" placeholder="Enter Your ID" id="first" formControlName="first" class="form-control" autocomplete="off" placeholder="Enter Your First Name">
+        </div>
+        <div class="form-group">
+            <label for="enter-name">Edit Last Name</label>
+            <input type="text" type="text" id="last" formControlName="last" class="form-control" placeholder="Enter Your Last Name" autocomplete="off">
+        </div>
+        <br>
+        <button class="button" type="submit" class="btn btn-primary" [disabled]="checkForm.invalid">Edit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+</div>
+<hr>
+
+<div>
+  <table class="table" border="grey">
+      <thead>
           <tr>
-            <th scope="col">ID Number</th>
-            <th scope="col">Name</th>
+              <th style="width: 60px;">Sr. No.</th>
+              <th style="width: 150px;">First Name</th>
+              <th style="width: 150px;">Last Name</th>
+              <th style="width: 50px;">Edit</th>
+              <th style="width: 50px;">Delete</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of userData">
-            <th scope="row">{{data._id}}</th>
-            <td>{{data.name}}</td>
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of list; index as i">
+              <td>
+                  {{i+1}}
+              </td>
+              <td>
+                  {{user.first}}
+              </td>
+              <td>
+                  {{user.last}}
+              </td>
+              <td>
+                  <button (click)="edit(i)"><mat-icon color="warn">edit</mat-icon></button>
+              </td>
+              <td>
+                  <button (click)="delete(i)"><mat-icon color="warn">delete</mat-icon></button>
+              </td>
           </tr>
-          
-        </tbody>
-      </table>
+      </tbody>
+  </table>
 </div>
