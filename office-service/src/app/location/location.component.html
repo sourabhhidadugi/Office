@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="container-fluid">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>LOCATION</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+                <hr>
+            </thead>
+            <tbody *ngIf="locations">
+                <tr *ngFor="let loc of locations; index as i">
+                    <td>{{loc.locationCode}}</td>
+                    <td>{{loc.location}}</td>
+                    <td><a (click)="openEdit(loc.locationCode)">Edit</a></td>
+                    <td><a (click)="delete(i)">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <button class="btn btn-success" (click)="openDialog()">Add New Location</button>
+    </div>
+</div>

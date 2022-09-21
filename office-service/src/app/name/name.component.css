@@ -1,0 +1,22 @@
+table {
+  margin-top: 20px;
+  padding: 10px;
+  border: solid 2px grey;
+  width: 800px;
+}
+a {
+  color: blue;
+  cursor: pointer;
+}
+.btn-primary {
+  margin-right: 20px;
+}
+hr {
+  position: relative;
+  top: 20px;
+  width: 800px;
+  border: none;
+  height: 7px;
+  background: black;
+  margin-bottom: 50px;
+}
