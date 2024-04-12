@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatSelectModule} from '@angular/material/select';
+import {MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
 import { DisplayNameComponent } from './display-name/display-name.component';
 import { InputNameComponent } from './input-name/input-name.component';
 import {MatGridListModule} from '@angular/material/grid-list';
