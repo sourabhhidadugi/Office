@@ -3,7 +3,7 @@ import { provideRoutes } from '@angular/router';
 import { Department, UserList } from '../model';
 import { DataService } from '../data.service';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
 
 @Component({
   selector: 'app-assign-hod',

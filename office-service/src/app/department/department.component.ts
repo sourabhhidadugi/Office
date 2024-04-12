@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../data.service';
 import { InputDepartmentComponent } from '../input-department/input-department.component';
