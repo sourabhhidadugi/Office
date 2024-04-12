@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -11,7 +11,7 @@ export class DisplayNameComponent implements OnInit {
   checkForm : any;
   list: any;
   id: any;
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.getCrudData()
   }
   ngOnInit(): void {

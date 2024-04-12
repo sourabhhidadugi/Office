@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-input-loc',
@@ -10,7 +10,7 @@ export class InputLocComponent implements OnInit {
   checkForm : any;
   list: any;
   id: any;
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.getCrudData()
   }
   ngOnInit(): void {
