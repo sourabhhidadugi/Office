@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { InputLocationComponent } from '../input-location/input-location.component';
 import { EditLocationComponent } from '../edit-location/edit-location.component';
@@ -18,7 +18,7 @@ export class LocationComponent implements OnInit {
 
   constructor(
     private data: DataService,
-    private builder: FormBuilder,
+    private builder: UntypedFormBuilder,
     public dialog: MatDialog
   ) {}
 

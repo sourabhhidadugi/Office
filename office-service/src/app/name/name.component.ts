@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../data.service';
 import { InputNameComponent } from '../input-name/input-name.component';
 import { EditNameComponent } from '../edit-name/edit-name.component';
@@ -18,7 +18,7 @@ export class NameComponent implements OnInit {
 
   constructor(
     private data: DataService,
-    private builder: FormBuilder,
+    private builder: UntypedFormBuilder,
     public dialog: MatDialog
   ) {}
 

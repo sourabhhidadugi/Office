@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Location } from '../model';
 import { DataService } from '../data.service';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -18,7 +18,7 @@ export class EditLocationComponent implements OnInit {
 
   constructor(
     private dataService: DataService,
-    private builder: FormBuilder,
+    private builder: UntypedFormBuilder,
     public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) data: any
   ) {

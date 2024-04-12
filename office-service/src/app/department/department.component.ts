@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../data.service';
 import { InputDepartmentComponent } from '../input-department/input-department.component';
 import { AssignHodComponent } from '../assign-hod/assign-hod.component';
@@ -18,7 +18,7 @@ export class DepartmentComponent implements OnInit {
 
   constructor(
     private data: DataService,
-    private builder: FormBuilder,
+    private builder: UntypedFormBuilder,
     public dialog: MatDialog
   ) {}
 

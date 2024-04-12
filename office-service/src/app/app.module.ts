@@ -16,35 +16,27 @@ import { InputDepartmentComponent } from './input-department/input-department.co
 import { AssignHodComponent } from './assign-hod/assign-hod.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LocationComponent,
-    InputLocationComponent,
-    EditLocationComponent,
-    InputNameComponent,
-    NameComponent,
-    EditNameComponent,
-    DepartmentComponent,
-    InputDepartmentComponent,
-    AssignHodComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-  ],
-  entryComponents: [
-    InputLocationComponent,
-    EditLocationComponent,
-    InputDepartmentComponent,
-    AssignHodComponent,
-    InputNameComponent,
-    EditNameComponent,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        LocationComponent,
+        InputLocationComponent,
+        EditLocationComponent,
+        InputNameComponent,
+        NameComponent,
+        EditNameComponent,
+        DepartmentComponent,
+        InputDepartmentComponent,
+        AssignHodComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
